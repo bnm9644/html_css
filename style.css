@@ -1,0 +1,20 @@
+.heading {
+    font-size: 50px;
+    color :crimson;
+    font-weight: normal;
+    box-sizing: border-box;
+    background-color: #fff;
+    background: #000;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    float: left;
+    float: right;
+    font-size: 30px;
+    width: 100px;
+    width: 100%;
+    border-radius: 40%;
+}
