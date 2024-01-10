@@ -1,5 +1,5 @@
 h1 {
-		font-size : 12px;
+	font-size : 12px;
         color : dodgerblue;
    }
         
@@ -12,7 +12,15 @@ body {
 	태그 선택자) - p,div,span,table...
         클래스 선택자) - .fight .hof
 	아이디 선택자) - #name , #password 
-	태그와 함께쓰는 선택자) p.hof , span#password... 등등
+	태그와 함께쓰는 선택자) p .hof , span#password... 등등 (sapcekey는 하위 선택자!)
 	하위 선택자 ) ol li -> ol 태그 밑에 li 태그
-	
+	그룹 선택자 ) 태그 두개 이상이 속성값이 똑같을때. 
+                      span,div {
+			color : red; border: 50px;
+		      }
+
+CSS 우선 적용 
+ 내부 선언 > 외부 선언
+ !important > 인라인 > id > class > tag 순
+ CSS 속성 값, ; 선언 전에 !important 해야 발동
 */
