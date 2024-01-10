@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300:400&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 300;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+/* CSS 파일의 경우는 스크롤이 필요한 밑의 영역의 작업 시 자동 Reload 되면서 페이지 자체가 위로 올라와 버리는 현상이 있음 
+
+- Live server 설정 변경하면 됨.
+
+  설정 - 확장 - Live server Config - Full Reload 체크 - 재시작 
+  htmltagwrap 설치 , ★ 사용법은 alt + w!
+  */
+
+
+section {} 
+
+section h1 {
+    font-size: 5em;
+}
+
+section p {
+    font-size: 2em;
+    line-height: 3em;
+    color: #999;
+}
+
+section h1 {
+    font-size: 50px;
+    color: red;
+    text-decoration: underline;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+section h3 {
+    color: red;
+    font-size: 5em;
+    border: 1px solid #000;
+    padding: 20px;
