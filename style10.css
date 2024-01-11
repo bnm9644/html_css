@@ -1,0 +1,48 @@
+/*
+	★★★ Box-sizing (상당히 중요)
+	Box 에 최초로 부여한 너비와 높이 값에 패딩과 보더가 추가 되더라도
+	최초로 정한 걸 확장 시키지 말게 하는것!
+
+	- padding 과 border를 적용함과 동시에, 너비 늘어나는 것 방지!
+		box-sizing: border-box;
+*/
+
+.box{
+	font-size: 50px;
+	border: 5px solid red;
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+
+.box2 {
+	border: 3px solid dodgerblue;
+	width: 600px; /* */
+}
+
+/*
+★ div 블록 요소 - (default : 세로 배치)
+
+가로 배치 - float : left;
+
+★ 부모 태그의 box2 width는 600이지만, 
+	 자식 태그의 div는 현재 200 + border(1px)가 양쪽으로 2px씩 추가로 들어가 
+	 box2 안에 다 못담고 초과함! 
+
+	 box-sizing: border-box;
+*/
+.box2 div {
+	border: 1px solid crimson; 
+	/* box-sizing: border-box;를 안 줄때,
+	   현재는 borber를 양쪽에 1씩 줘서 부모 태그 박스의 width가 총 6px 늘어남 
+	 */
+	width: 200px;
+	height: 200px;
+	float: left; /* ★ 가로 배치 */
+	box-sizing: border-box; /* 부모 태그 width 안에 다 넣어야 함 */
+
+	/* 최초의 너비값과 높이값을 유지한채 padding과 border 값을 안에 심는 것*/
+}
