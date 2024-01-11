@@ -1,0 +1,47 @@
+/*
+	HTML 자식요소, 부모요소
+
+	현재 위치 태그보다 한 단계 높으면 : 부모
+	현재 위치 태그보다 한 단계 낮으면 : 자식
+
+
+	★	CSS 자손선택자, 자식선택자
+		-> 자식 : 바로 밑 요소, 
+		-> 자손 : 바로 밑 요소 밑의 것까지 포함!
+
+	★	CSS 자손선택자는 ' ' 다 (space)
+				자식선택자 '>' 다 
+*/
+
+.parent{
+	border: 1px solid crimson;
+	width: 600px;
+	height: 200px;	
+}
+
+.child {
+	border: 1px solid dodgerblue;
+	width: 200px;
+	height: 50px;
+}
+
+.box {
+	border: 1px solid red;
+	width: 400px;
+	height: 400px;
+}
+
+/* ★ '>' : 바로 밑*/
+.box > div{
+	border: 1px solid blue;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+}
+
+.box > div div {
+	width: 50px;
+	height: 50px;
+	background: #000;
+}
+

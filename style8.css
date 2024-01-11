@@ -1,0 +1,71 @@
+/*
+	CSS 박스모델 (border - 테두리)
+	1) border-style : 테두리 스타일 지정
+		- solid , dashed, dotted, double
+
+	2) border-width : 테두리 두께 지정
+	  - thin, medium, thick , px , %
+
+	3) border-color : 테두리 색상 지정	
+		- color
+
+	★ border-radius (테두리 둥글게 하기)
+	px , % 가 단위
+	border-radius : 전부 적용 (네 모서리)
+	border-radius : a,b,c,d : 네 모서리 전부 지정값
+	★ (단, a-> b-> c-> d, 시계방향)
+*/
+
+.box {
+	width: 400px;
+	height: 400px;
+/*	border-color: dodgerblue;
+	border-width: 5px;
+	border-style: solid;
+	border-bottom : 5px solid dodgerblue; 
+	- bottom, top, left, right 제외 시는 none
+*/
+	border : 5px solid dodgerblue;
+	
+}
+
+div {
+ width: 200px;
+ height: 200px;
+ border:5px solid orange;
+ background-color: dodgerblue;
+ margin : 20px; /*밑의 여유*/
+ float: left;
+}
+
+.box1 {
+ border-radius: 20px;
+}
+
+.box2 {
+	border-radius: 50px;
+}
+
+.box3 {
+	border-radius: 100%; /* ★ 완벽한 원 */
+}
+
+.box4 {
+	border-radius: 50px 0 50px 0; 
+}
+
+.box5 {
+	border-radius: 100% 0 0 0; 
+}
+
+.box6 {
+	border-radius: 100% 100% 100% 0; 
+}
+
+.box7 {
+	border-radius: 100% 0 100% 0; 
+}
+
+.box8 {
+	border-radius: 100% 100% 0 0; 
+}
