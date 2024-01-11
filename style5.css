@@ -1,0 +1,25 @@
+body {
+	font-size: 15px;
+	line-height: 1.6em; /* body 태그 전체 문서 서식 제어, 폰트에 따라 재조정 필요 X*/
+}
+
+h1{
+	font-weight: normal;
+	color:dodgerblue;
+	text-decoration: overline; /*밑줄*/
+}
+
+p.text {
+	font-weight: bold;
+	font-style: italic; /*기울*/
+	text-align: justify; /*양쪽 정렬*/
+}
+
+a {
+	text-decoration: none;
+}
+
+p.copy {
+	text-transform: capitalize; /*첫글자만 대문자*/
+	text-align: justify;
+}

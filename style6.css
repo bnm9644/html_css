@@ -1,0 +1,25 @@
+/*
+	CSS 서식관련 : 목록 스타일
+	
+	list-style-image : url(경로),
+	list-style
+
+	1) ul : 순서 없는 스타일
+	disc : ● 
+  circle : ○
+	square : □
+	none 
+	 
+	2) ol : 순서 있는 스타일
+	demical ,
+	roman,
+
+*/
+
+ol.menu {
+	list-style:circle;
+}
+
+ul.menu {
+	list-style:circle; /* 가상 클래스 :before, 목록 아이콘 변경*/
+}
