@@ -1,13 +1,60 @@
 /*
-  Box-shadow (그림자) - 5가지 속성 존재
+  Box-shadow (그림자) : '박스' 그림자 효과, 5가지 속성 존재
   offset-x - x축 좌/우측 이동
   offset-y - y축 상/하측 이동
   (함수 x,y축 생각하면 됨) -> css 수치 기입시 플러스 값은 항상 좌 -> 우
 					x,y 축은 플러스 값 넣을 시 상 -> 하 순으로 내려옴
-  blur - 그림자 가장자리 부드럽게 하는 정도 
+  blur - 그림자 가장자리 부드럽게 하는 정도 (퍼짐정도)
   color - 색상(그림자)
-  Inset - 그림자를 안쪽으로 넣음 , 넣지 않으면 바깥쪽으로 그림자 들어감.
-  
-	
+  Inset - 그림자를 안쪽으로 넣음 , 넣지 않으면 바깥쪽으로 그림자 들어감.	
 */
+
+/*
+	text-shadow : '텍스트' 그림자 효과 
+	text-shadow : offset-x offset-y blur-radius color 
+
+	offset-x : 그림자 수'평'거리 - X축
+	offset-y : 그림자 수'직'거리 - Y축
+	blur-radius : 흐림 정도 (default : 0)
+	color : 색상 (default : text와 동일한 색상)
+*/
+
+div {
+	background-color : #ccc;
+	width: 250px;
+	height : 200px;
+	margin : 10px; 
+	border-radius : 5px;
+	float : left; /*가로 정렬*/
+}
+
+.box1 {
+	/* box-shadow: (inset) x축이동거리 y축이동거리 퍼짐정도 색상 */	
+			        /* offset-x offset-y blur color */
+	box-shadow : 5px 5px 15px black; /* 바깥쪽 */
+}
+
+.box2 {
+	box-shadow : 0 0 20px dodgerblue;
+}
+
+.box3 {
+	box-shadow : 10px 10px crimson; /*생략 가능*/
+}
+
+.box4 {
+	box-shadow : inset 0 0 20px black; /*inset 선언 안쪽 그림자*/
+}	
+
+.box5 {
+	box-shadow : inset 0 0 20px green; /*inset 선언 안쪽 그림자*/
+}	
+
+
+
+
+
+
+
+
 
