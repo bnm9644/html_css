@@ -1,56 +1,25 @@
 /*
-	★	HTML 인라인(inline) , 블록(block) , 인라인블록(inline-block) 요소
+	마우스 오버 이펙트 가상(hover)클래스 와 트랜지션 (transition)
 
-	1) 인라인 요소
-	- 1줄에 여러개 배치 가능, 
-	- 기본 너비 : 컨텐츠 너비 - text의 내용이 많으면 그만큼 '너비(width)' 가 늘어남!
-	- 크기 값 있음
-	- '좌우' 마진은 있으나, '상하' 마진 값 없음
-	- 대부분 'text 서식' 을 만드는 태그 위주
-	ex) span,a,small,big,em,u,s,del,br,q,b,
-	    strong,mark,sub,sup,video,audio
-
-	2) 블록 요소
-	- 1줄에 1개만 배치
-	- 기본 너비값 100%
-	- 크기 값 있음
-	- 상/우/하/좌 마진 있음
-	- '레이아웃(Layout)' 을 잡는 태그 위주
-	ex) div,table,figure,figcaption, caption, header,nav,footer,	
-			section, article, aside,p,blockquote,ul,ol,li,td,th,
-			form,hr,h1~6
-
-	3) 인라인 블록 요소
-	- 1줄에 여러개 배치
-	- 기본 너비 : 컨텐츠 너비
-	- 크기 값 있음
-	- 상하 마진 있음
-	ex) img, input, button, fontawesome 
+	hover : 마우스 올리거나 떼낼 때의 가상 클래스
+	transition : 마우스 이펙트 중 하나, 
+	★ 단 이 트랜지션 속성은, hover가 아닌 곳에 기입해야 
+	   마우스를 올릴 때와 빠질 때 모두 적용되기 때문이다.
 
 */
 
 body {
-	color: #000; 
+	background-color: white;
+	color :#333;
 }
 
-/*인라인 요소*/
-a {
- color: yellow;
- text-decoration: none;
- border: 2px solid rgba(161, 61, 161, 0.671);
- margin : 30px;
- display: block;
- margin : 10px;
- text-align: center;
+a { /* a태그의 최초의 상태 */
+	color :#333;
+	text-decoration: none;
+	transition: 1s; /*hover에 넣게 되면 넣을때는 작동 하나, 뺄뗀 작동안함 */
 }
 
-/*블록 요소*/
-div {
-	border : 3px solid orangered;
-	height: 100px;
-}
-
-img {
-	border: 2px solid black;
-	margin: 50px;
+a:hover{ /* 띄어쓰기 조심 - 발동 안됨! */
+	color:aqua;
+	text-decoration: underline;
 }

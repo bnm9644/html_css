@@ -1,0 +1,25 @@
+/*
+	마우스 오버 이펙트 가상(hover)클래스 와 트랜지션 (transition)
+
+	hover : 마우스 올리거나 떼낼 때의 가상 클래스
+	transition : 마우스 이펙트 중 하나, 
+	★ 단 이 트랜지션 속성은, hover가 아닌 곳에 기입해야 마우스를 올릴 때와 빠질 때 모두 적용되기 때문이다.
+
+*/
+
+a {
+	color:black;
+	text-decoration: none;
+	border : 1px solid #000;
+	width: 120px;
+	text-align: center;
+	display: inline-block; /* 크기 값도 주면서 줄이 안바뀌는 인라인 블록 */
+	padding: 5px;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+a:hover{		/*마우스 올리거나 뗄 때*/
+	background-color: #000;
+	color: white;
+}
