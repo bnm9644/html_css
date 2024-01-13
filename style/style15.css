@@ -1,0 +1,25 @@
+/*
+	★★★ CSS 포지션 - position 속성  : relative & absolute ,
+
+	Relative : 부모 요소 (감싸는 것)
+	Absolute : 자식 요소 (감쌈 당하는 것)
+
+	★ 좌표를 부여해야 함 - left , right , top , bottom
+*/
+
+.parent {
+	background-color: blue;
+	width: 600px;
+	height: 300px;
+	position: relative;
+} 
+
+.child {
+	background-color: crimson;
+	width: 200px;
+	height: 100px;
+	position: absolute; 
+	/* ★★ position 속성 없으면 left,right,top,bottom은 아무 의미 없음*/
+	right: 0;	
+	bottom: 0;
+}
