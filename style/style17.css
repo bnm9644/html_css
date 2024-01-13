@@ -1,0 +1,47 @@
+/*
+	순서를 만드는 가상클래스 (first-child , last-child)
+
+	first-child : 첫번째만 체크
+	last-child : 마지막만 체크
+ */
+
+/* 공통적인 속성 */
+.btn span {
+	background-color: #ddd;
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer; /* 마우스 손가락 - a태그가 아닐때 사용*/
+	border : 1px solid black;
+	margin-right: -7px; /* 간격 당김 */
+ }
+
+ .tab-inner {
+	width: 400px;
+ }
+
+ .btn span:first-child {
+		background-color: #fff;
+ }
+
+ .btn span:last-child {
+		color :red;
+ }
+
+ .tab {
+	border:1px solid black;
+ }
+
+ .tab a { /*a가 인라인 요소 이므로 width 가로 배치*/
+	display: block; /*1줄에 하나*/
+	text-decoration: none;
+	color: #333;
+	margin: 5px;
+	border-bottom: 1px solid black;
+ }
+
+ .tab a:last-child {
+	border-bottom: none;
+ }
