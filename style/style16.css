@@ -1,0 +1,76 @@
+/*
+	★ 순서를 만드는 가상 클래스 (nth-child, nth-of-type)
+	- 클래스 네임을 정하지 않고, 원하는 요소를 선택하는 것
+
+	★ 선택자:nth-child(n) { };
+		-> 선택자의 n번째 위치!
+
+		선택자.nth-of-type()
+		-> 선택자의 태그가 추가 시 순서가 바뀌는 것을 방지
+*/
+
+.box {
+	border: 5px solid black;
+	text-align: center; /*자식이 inline*/
+	bottom: 10px;
+}
+
+.box div {
+	border: 5px solid black;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	display: inline-block; 
+}
+
+.box div:nth-child(1) {
+	background-color: dodgerblue;
+}
+
+.box div:nth-child(2) {
+	background-color: crimson;
+}
+
+.box div:nth-child(3) {
+	background-color: #fff;
+}
+
+.box div:nth-child(4) {
+	background-color: gold;
+}
+
+/*nth-of-type*/
+
+.box2 {
+	border: 5px solid black;
+	text-align: center; /*자식이 inline*/
+	bottom: 10px;
+}
+
+
+/*nth-of-type 
+ : 다른 태그가 들어와 순서를 어지럽혀지는것을 방지 */
+
+.box2 div {
+	border: 5px solid black;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	display: inline-block; 
+}
+
+.box2 div:nth-of-type(1) { 
+	background-color: dodgerblue;
+}
+
+.box2 div:nth-of-type(2) {
+	background-color: crimson;
+}
+
+.box2 div:nth-of-type(3) {
+	background-color: #fff;
+}
+
+.box2 div::nth-of-type(4) {
+	background-color: gold;
+}
