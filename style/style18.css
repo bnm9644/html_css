@@ -1,0 +1,40 @@
+/*
+	position:absolute 
+
+	left 					top
+
+
+	Bottom				right
+
+	-> 1) 원하는 위치로 자식 요소를 보내는 것, 
+				★	부모 요소에 relative , 자식 요소에 absolute 줘야 함!
+				★ 좌표 관련 속성은 position과 같이 사용해야 함 
+				   - 즉, position 속성이 있어야 사용 가능!
+
+	-> 2) 브라우저 크기에 상관 없이 항상 수직,수평 중앙 유지.
+		- transform : translate : HTML 요소는 좌표를 항상, '좌측 상단' 을 기준으로 잡음
+
+*/
+
+/* 부모 요소와 자식 요소가 매칭 안되어 있으면 position 줘도 소용 없다.*/
+
+/* 부모 */
+.parent {
+	position : relative; /*부모 라는 걸 인식, 이걸 안주면 현재 body 가 부모라 판단! */
+
+	border : 1px solid #000;
+	width: 500px;
+	height: 500px;	/*현재 높이를 강제로 줘놨음*/
+}
+
+/* 자식 */
+.child {
+	position: absolute; /* 이걸 주게 되면 기본적으로 top : 0 , left : 0 이 기본값 들어감*/
+	border-radius: 100%;
+	background-color: crimson;
+	width: 200px;
+	height: 200px;
+	top:50%;
+	left: 50%;	/* % : 비율, 부모/자식 요소 크기에 변화가 있어도 항상 정중앙 유지 할수 있게 됨 */
+	transform: translate(-50% , -50%); /*translate : 이동하다. '자기 자신의 크기' 에서! */
+}

@@ -1,0 +1,42 @@
+/*
+	★ 중요 
+	↘️ : (+) 로 이동
+	↖️ : (-) 로 이동
+
+	강의 한번 더 볼것, 
+*/
+
+.parent {
+	position: relative;
+	border : 7px solid red;
+	width: 600px;
+	height: 300px;
+
+}
+
+.child1 {
+	position: absolute;
+	background-color: navy;
+	width: 150px;
+	height: 100px;
+	left : 0;
+	top: 100%;
+}
+
+.child2 {
+	position: absolute;
+	background-color: navy;
+	width: 150px;
+	height: 100px;
+	left : 100%;
+	top: 0;
+}
+
+.child3 {
+	position: absolute;
+	background-color: navy;
+	width: 150px;
+	height: 100px;
+	left : 100%;
+	top: 100%;
+}
